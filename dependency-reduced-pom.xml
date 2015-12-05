@@ -4,7 +4,7 @@
   <groupId>zyondev</groupId>
   <artifactId>poc-lambda</artifactId>
   <name>poc-lambda</name>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <build>
     <plugins>
       <plugin>
