@@ -40,5 +40,5 @@ Feito isso va para console da AWS para criar uma nova lambda ou editar a já exi
 
 *Handler:* coloque o caminho da class onde você implementou a interface por exemplo "zyondev.lambda.controller.PocLambda"
 
-*Role: * crie uma role padrão como sugerido pela aws
+*Role:* crie uma role padrão como sugerido pela aws
 
