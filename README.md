@@ -4,16 +4,34 @@ Mostrando como implementar e utilizar seus recursos
 
 #SetUp
 O SetUp Inicial do projeto foi criando um projeto simples do maven
-e depois colocando as dependencias dentro do pom.xml do lambda COLOCAR CODIGO AQUI
+e depois colocando as dependencias dentro do pom.xml do lambda 
+<code>
+   <dependency>
+  		<groupId>com.amazonaws</groupId>
+  		<artifactId>aws-lambda-java-core</artifactId>
+  		<version>1.1.0</version>
+  	</dependency>
+</code>
 
-em seguida colocar o plugin para poder copilar o codigo e gerar o JAR tambem é inserido dentro do pom.xml COLOCAR CODIGO
+em seguida colocar o plugin de build tambem é inserido dentro do pom.xml 
+<code>
+  <build>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-shade-plugin</artifactId>
+  			<version>2.3</version>
+  		</plugin>
+  	</plugins>
+  </build>
+</code>
 
 #CODIFICANDO
 
-com as dependencias OK você pode criar uma class implementando a interface RequestHandler<T,T>
+Com as dependencias OK você pode criar uma class implementando a interface RequestHandler<T,T>
 Passando como primeiro parametro o tipo de objeto que você ira receber e no segundo o tipo de objeto da resposta.
+Exemplo: https://github.com/zyondias/poc-lambda/blob/master/src/main/java/zyondev/lambda/controller/PocLambda.java
 
-Exemplo classe desse projeto dentro de COLOCAR LINK
 
 #Build & deploy
 
