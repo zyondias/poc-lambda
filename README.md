@@ -5,16 +5,16 @@ Mostrando como implementar e utilizar seus recursos
 #SetUp
 O SetUp Inicial do projeto foi criando um projeto simples do maven
 e depois colocando as dependencias dentro do pom.xml do lambda 
-<code>
+<pre>
    <dependency>
   		<groupId>com.amazonaws</groupId>
   		<artifactId>aws-lambda-java-core</artifactId>
   		<version>1.1.0</version>
   	</dependency>
-</code>
+</pre>
 
 em seguida colocar o plugin de build tambem é inserido dentro do pom.xml 
-<code>
+<pre>
   <build>
   	<plugins>
   		<plugin>
@@ -24,7 +24,7 @@ em seguida colocar o plugin de build tambem é inserido dentro do pom.xml
   		</plugin>
   	</plugins>
   </build>
-</code>
+</pre>
 
 #CODIFICANDO
 
