@@ -42,3 +42,8 @@ Feito isso va para console da AWS para criar uma nova lambda ou editar a já exi
 
 *Role:* crie uma role padrão como sugerido pela aws
 
+
+#Referencias
+http://docs.aws.amazon.com/lambda/latest/dg/java-handler-using-predefined-interfaces.html
+http://docs.aws.amazon.com/lambda/latest/dg/java-create-jar-pkg-maven-and-eclipse.html
+

@@ -11,6 +11,7 @@ public class PocLambda implements RequestHandler<Pessoa, String> {
 	 * Implmentando metodo que será chamado pela lambda da aws
 	 */
 	public String handleRequest(Pessoa person, Context context) {
+		//utilizando esse log do contexto ele aparece no console da aws dentro do CloudWatch
 		context.getLogger().log("testando log chegou novo usuario: "+ person.getApelido());
 		return "criado com sucesso usando interface: " + person.getNome();
 	}
