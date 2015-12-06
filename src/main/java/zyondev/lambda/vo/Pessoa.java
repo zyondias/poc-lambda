@@ -1,7 +1,11 @@
 package zyondev.lambda.vo;
 
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
+
+@DynamoDBTable(tableName = "pessoas")
 public class Pessoa {
 	
+	private Integer id;
 	private String nome;
 	private Integer idade;
 	private String apelido;
@@ -23,6 +27,12 @@ public class Pessoa {
 	}
 	public void setApelido(String apelido) {
 		this.apelido = apelido;
+	}
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
 	}
 	
 	
