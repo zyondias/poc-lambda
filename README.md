@@ -6,24 +6,24 @@ Mostrando como implementar e utilizar seus recursos
 O SetUp Inicial do projeto foi criando um projeto simples do maven
 e depois colocando as dependencias dentro do pom.xml do lambda 
 <pre>
-   <dependency>
-  		<groupId>com.amazonaws</groupId>
-  		<artifactId>aws-lambda-java-core</artifactId>
-  		<version>1.1.0</version>
-  	</dependency>
+   &lt;dependency&gt;
+  		&lt;groupId&gt;com.amazonaws&lt;/groupId&gt;
+  		&lt;artifactId&gt;aws-lambda-java-core&lt;/artifactId&gt;
+  		&lt;version&gt;1.1.0&lt;/version&gt;
+  	&lt;/dependency&gt;
 </pre>
 
 em seguida colocar o plugin de build tambem é inserido dentro do pom.xml 
 <pre>
-  <build>
-  	<plugins>
-  		<plugin>
-  			<groupId>org.apache.maven.plugins</groupId>
-  			<artifactId>maven-shade-plugin</artifactId>
-  			<version>2.3</version>
-  		</plugin>
-  	</plugins>
-  </build>
+  &lt;build&gt;
+  	&lt;plugins&gt;
+  		&lt;plugin&gt;
+  			&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+  			&lt;artifactId&gt;maven-shade-plugin&lt;/artifactId&gt;
+  			&lt;version&gt;2.3&lt;/version&gt;
+  		&lt;/plugin&gt;
+  	&lt;/plugins&gt;
+  &lt;/build&gt;
 </pre>
 
 #CODIFICANDO
